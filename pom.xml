@@ -113,6 +113,37 @@
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.7.21</version>
         </dependency>
+        <!--校验相关 -->
+        <!--apache工具包，方便常规操作 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.4</version>
+        </dependency>
+        <!--hibernate校验工具 -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>6.1.4.Final</version>
+        </dependency>
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.4</version>
+        </dependency>
+        <!--hutool工具 -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.3.7</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-parent</artifactId>
+            <version>5.3.7</version>
+            <type>pom</type>
+        </dependency>
     </dependencies>
 
 </project>
