@@ -52,7 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/SuperMarket-web/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -65,22 +65,23 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\github\SuperMarket\SuperMarket-web\src\main\webapp\WEB-INF\views" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.lzy" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\github" />
+      <recent name="E:\github\SuperMarket\SuperMarket-web\src\main\java" />
+      <recent name="E:\github\SuperMarket\SuperMarket-web\src\main\resources" />
+      <recent name="E:\github\SuperMarket\SuperMarket-mybatis-generator\src\main\resources" />
+      <recent name="E:\github\SuperMarket\SuperMarket-api\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.lzy" />
       <recent name="com.lzy.config" />
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\github\SuperMarket\SuperMarket-web\src\main\java" />
-      <recent name="E:\github\SuperMarket\SuperMarket-web\src\main\resources" />
-      <recent name="E:\github\SuperMarket\SuperMarket-mybatis-generator\src\main\resources" />
-      <recent name="E:\github\SuperMarket\SuperMarket-api\src\main\resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\github\SuperMarket\SuperMarket-web\src\main\webapp\WEB-INF\views" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Application ">
@@ -168,38 +169,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1611914883411" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1612263364018">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1612266753748">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612263364018" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1612263364017">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612266753748" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1612266753748">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1612263364017" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1612263364017">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1612266753748" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1612266753748">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1612263364017" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1612263364018">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1612266753748" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1612266753748">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1612263364018" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1612263341525">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1612266753748" />
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1612266753738">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612263341525" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1612263341525">
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612266753738" />
+    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1612266753738">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1612263341525" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1612263341525">
+    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1612266753738" />
+    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1612266753738">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1612263341525" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1612263341525">
+    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1612266753738" />
+    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1612266753738">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1612263341525" />
+    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1612266753738" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1612262803232">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
