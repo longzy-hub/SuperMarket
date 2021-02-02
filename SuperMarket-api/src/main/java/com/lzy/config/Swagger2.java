@@ -30,10 +30,10 @@ public class Swagger2 {
         return new ApiInfoBuilder() // 接口的信息建造者
                 .title("超市平台 接口api") // 文档页标题
                 .contact(new Contact("lzy",
-                        "https://www.lzy.com",
+                        "https://github.com/longzy-hub/SuperMarket",
                         "2587234011@qq.com")) // 联系人信息
                 .description("为贵工程超市平台提供的api文档") // 详细信息
-                .termsOfServiceUrl("https://www.lzy.com") // 网站地址
+                .termsOfServiceUrl("https://github.com/longzy-hub/SuperMarket") // 网站地址
                 .build();
     }
 }
