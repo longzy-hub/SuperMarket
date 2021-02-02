@@ -18,12 +18,6 @@
             <artifactId>SuperMarket-service</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <!--配置web依赖-->
-        <dependency>
-            <groupId>com.lzy</groupId>
-            <artifactId>SuperMarket-web</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 
 </project>

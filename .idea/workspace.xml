@@ -44,6 +44,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -51,7 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/SuperMarket-mybatis-generator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SuperMarket-web/src/main/java" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -64,18 +65,25 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\github\SuperMarket\SuperMarket-web\src\main\webapp\WEB-INF\views" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.lzy" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.lzy" />
+      <recent name="com.lzy.config" />
+      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\github\SuperMarket\SuperMarket-web\src\main\java" />
+      <recent name="E:\github\SuperMarket\SuperMarket-web\src\main\resources" />
       <recent name="E:\github\SuperMarket\SuperMarket-mybatis-generator\src\main\resources" />
       <recent name="E:\github\SuperMarket\SuperMarket-api\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="Spring Boot.Application ">
     <configuration name="mybatis-generator" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -101,28 +109,25 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="SuperMarket-api" />
+    <configuration name="Application " type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SuperMarket-web" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lzy.controller.*" />
+          <option name="PATTERN" value="com.lzy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lzy.Application" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_WORKING_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Maven.mybatis-generator" />
-      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Spring Boot.Application " />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.Application" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -135,6 +140,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611650656463</updated>
       <workItem from="1611650660212" duration="25582000" />
+      <workItem from="1612260916133" duration="2415000" />
     </task>
     <servers />
   </component>
@@ -142,14 +148,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="45" width="1089" height="779" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611914943343">
+    <state x="223" y="45" width="1089" height="779" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612263338428">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="45" width="1089" height="779" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1611914943343" />
+    <state x="223" y="45" width="1089" height="779" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1612263338428" />
     <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1611984933233">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1611984933233" />
+    <state x="498" y="218" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1612263327124">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="218" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1612263327124" />
     <state x="514" y="270" width="508" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1611916336928">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -158,42 +168,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1611914883411" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1611986638413">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1612263364018">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611986638413" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1611986638413">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612263364018" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1612263364017">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1611986638413" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1611986638413">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1612263364017" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1612263364017">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1611986638413" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1611986638413">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1612263364017" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1612263364018">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1611986638413" />
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1611986638413">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1612263364018" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1612263341525">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611986638413" />
-    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1611986638413">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612263341525" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1612263341525">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1611986638413" />
-    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1611986638413">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1612263341525" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1612263341525">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1611986638413" />
-    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1611986638413">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1612263341525" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1612263341525">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1611986638413" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1611921791427">
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1612263341525" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1612262803232">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1611921791427" />
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1612262803232" />
+    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612262986227">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1612262986227" />
     <state x="540" y="114" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1611920636061">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
