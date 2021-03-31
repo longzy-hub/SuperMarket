@@ -22,8 +22,7 @@ public class ValidatorImpl implements ValidatorApi {
         ValidationResult result = validator(bean);
         if (MapUtil.isNotEmpty(result.getErrorMsgMap())){
             if (result.isHasErrors()){
-                throw new BusinessException(EmBusinessError.UNKNOWN_ERROR,//
-                         result.getErrorMsgMap().toString());
+                throw new BusinessException(EmBusinessError.UNKNOWN_ERROR,result.getErrorMsgMap().toString());
             }
         }
     }

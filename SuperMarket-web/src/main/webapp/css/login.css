@@ -1,0 +1,83 @@
+*{
+	font-size: 9pt;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "微软雅黑";
+	margin: 0 auto;
+	min-width: 980px;
+	background-color: #eee;
+}
+ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+li {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a, a:focus {
+	text-decoration: none;
+	color: #000;
+	outline: none;
+}
+a:hover {
+	color: #00a4ac;
+	text-decoration: underline;
+}
+.logintop {
+	background-color: #428bca;
+	height: 50px;
+
+}
+.logintop span{
+	line-height: 50px;
+	font-size: 20px;
+	margin-left: 200px;
+	color: #afc5d2;
+}
+.loginbox{
+	width: 400px;
+	height: 285px;
+	margin: 0 auto;
+	margin-top: 80px;
+	border: 10px hidden white;
+	background-color: whitesmoke;
+}
+.loginbox h3{
+	margin-left: 130px;
+}
+.loginbox ul{
+	margin-top: 20px;
+}
+.loginbox ul li .code{
+	width:250px;
+}
+.loginbox ul li canvas{
+	margin-top: -34px;
+	width: 100px;
+	height: 35px;
+	float: right;
+	background-color: white;
+	border-radius: 10px;
+}
+.loginbox ul li button{
+	margin-top: 10px;
+}
+.has-success .form-control {
+	border-color: #78c4f0;
+	padding-left: 36px;
+}
+.form-control-feedback{
+	left: 0;
+}
+/*输入框中图标的颜色设置；*/
+.has-success .form-control-feedback {
+	color: #78c4f0;
+}

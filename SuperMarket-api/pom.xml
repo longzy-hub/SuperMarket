@@ -11,12 +11,18 @@
 
     <artifactId>SuperMarket-api</artifactId>
 
+    <!--配置service依赖-->
     <dependencies>
-        <!--配置service依赖-->
         <dependency>
             <groupId>com.lzy</groupId>
             <artifactId>SuperMarket-service</artifactId>
             <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

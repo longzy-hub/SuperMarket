@@ -1,3 +1,15 @@
-com\lzy\controller\viewobject\TestVo.class
+com\lzy\controller\ProductController.class
+com\lzy\controller\SysRoleController.class
+com\lzy\shiro\realm\CustomerRealm.class
+com\lzy\shiro\salt\MyByteSource.class
+com\lzy\controller\SysAdminController.class
+com\lzy\controller\SysUserController.class
+com\lzy\shiro\salt\MyByteSource$BytesHelper.class
+com\lzy\controller\CategoryController.class
+com\lzy\shiro\config\ShiroConfig.class
+com\lzy\shiro\salt\MyByteSource$1.class
+com\lzy\aspect\ServiceLogAspect.class
 com\lzy\config\Swagger2.class
+com\lzy\controller\SysLoginController.class
+com\lzy\config\MybatisPlusConfig.class
 com\lzy\controller\TestController.class

@@ -14,15 +14,16 @@
 
     <name>SuperMarket-web Maven Webapp</name>
 
+    <!--配置api的依赖-->
     <dependencies>
         <dependency>
             <groupId>com.lzy</groupId>
             <artifactId>SuperMarket-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        
-
     </dependencies>
+
+
 
   
 
