@@ -226,7 +226,8 @@ $(function () {
                 pageSize,
                 result.data.total > 0 ? result.data.records.length : 0,
                 "productPage",
-                renderProductListAndPage);
+                renderProductListAndPage,
+                true);
         }else {
             //showMessage("获取分类下的商品列表",result.msg, false);
         }

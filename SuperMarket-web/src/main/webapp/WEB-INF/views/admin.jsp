@@ -32,7 +32,7 @@
                     </a>
                     <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
                         <li>
-                            <a href="#">
+                            <a class="popstyle"  target="_blank" href="/personal/personal.page">
                                 <i class="ace-icon fa fa-user"></i>
                                 个人信息
                             </a>
@@ -145,7 +145,7 @@
                 <b class="arrow"></b>
                 <ul class="submenu">
                     <li class="">
-                        <a class="popstyle" target="_blank" href="#">
+                        <a class="popstyle" target="_blank" href="/shoppingcart/cart.page">
                             <i class="menu-icon fa fa-caret-right"></i>
                             购物车
                         </a>
@@ -160,28 +160,28 @@
                         <b class="arrow"></b>
                         <ul class="submenu">
                             <li class="">
-                                <a class="popstyle" target="_blank" href="#">
+                                <a class="popstyle" target="_blank" href="/order/completed.page">
                                     <i class="menu-icon fa fa-caret-right"></i>
                                     已完成
                                 </a>
                                 <b class="arrow"></b>
                             </li>
                             <li class="">
-                                <a class="popstyle" target="_blank" href="#">
+                                <a class="popstyle" target="_blank" href="/order/toBePaid.page">
                                     <i class="menu-icon fa fa-caret-right"></i>
                                     待付款
                                 </a>
                                 <b class="arrow"></b>
                             </li>
                             <li class="">
-                                <a class="popstyle" target="_blank" href="#">
+                                <a class="popstyle" target="_blank" href="/order/toBeDelivered.page">
                                     <i class="menu-icon fa fa-caret-right"></i>
                                     待发货
                                 </a>
                                 <b class="arrow"></b>
                             </li>
                             <li class="">
-                                <a class="popstyle" target="_blank" href="#">
+                                <a class="popstyle" target="_blank" href="/order/toBeReceived.page">
                                     <i class="menu-icon fa fa-caret-right"></i>
                                     待收货
                                 </a>
@@ -202,25 +202,42 @@
                         <b class="arrow"></b>
                         <ul class="submenu">
                             <li class="">
-                                <a class="popstyle" target="_blank" href="#">
+                                <a class="popstyle" target="_blank" href="/trade/trade.page">
                                     <i class="menu-icon fa fa-caret-right"></i>
                                     交易金额
                                 </a>
                                 <b class="arrow"></b>
                             </li>
                             <li class="">
-                                <a class="popstyle" target="_blank" href="#">
+                                <a href="#" class="dropdown-toggle">
                                     <i class="menu-icon fa fa-caret-right"></i>
-                                    订单处理
+                                    <span class="menu-text">订单处理</span>
+                                    <b class="arrow fa fa-angle-down"></b>
                                 </a>
                                 <b class="arrow"></b>
+                                <ul class="submenu">
+                                    <li class="">
+                                        <a class="popstyle" target="_blank" href="/order/handledOrder.page">
+                                            <i class="menu-icon fa fa-caret-right"></i>
+                                            已处理
+                                        </a>
+                                        <b class="arrow"></b>
+                                    </li>
+                                    <li class="">
+                                        <a class="popstyle" target="_blank" href="/order/dealOrder.page">
+                                            <i class="menu-icon fa fa-caret-right"></i>
+                                            未处理
+                                        </a>
+                                        <b class="arrow"></b>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </li>
                 </shiro:hasPermission>
                 <shiro:hasPermission name="back:*:*">
                     <li class="">
-                        <a  class="popstyle" target="_blank" href="">
+                        <a  class="popstyle" target="_blank" href="/back/back.page">
                             <i class="menu-icon fa fa-truck"></i>
                             <span class="menu-text"> 配送管理 </span>
                         </a>
@@ -229,7 +246,7 @@
                 </shiro:hasPermission>
             </shiro:hasAnyRoles>
             <li class="">
-                <a class="popstyle" target="_blank" href="">
+                <a class="popstyle" target="_blank" href="/personal/personal.page">
                     <i class="menu-icon fa fa-user"></i>
                     <span class="menu-text"> 个人信息 </span>
                 </a>
@@ -251,7 +268,7 @@
     <div class="main-content">
         <!-- 设置每个页面显示位置 -->
         <div class="main-content">
-            <iframe id="innerFrame" src="/sys/permission/perm.page" width="100%" style="min-height: 768px;"></iframe>
+            <iframe id="innerFrame" src="/sys/admin/index.page" width="100%" style="min-height: 768px;"></iframe>
         </div>
     </div><!-- /.main-content -->
 
@@ -320,6 +337,7 @@
             $(".popstyle").parent().removeClass("active");
             $(this).parent().addClass("active");
         });
+
 
     });
 </script>

@@ -14,7 +14,7 @@
             <p>商品名称：<span id="productName"></span></p>
             <p>商品描述：<span id="describes"></span></p>
             <p>购买数量：<input id="number" type="number" value="1"/></p>
-            <p class="center"><a  id="productOrder" href="#" class="btn btn-xs btn-danger" role="button">
+            <p class="center"><a id="cart-add" href="#" class="btn btn-xs btn-danger" role="button">
                 <span class="menu-icon fa fa-shopping-cart" style="font-size: 16px"></span>
                 加入购物车
             </a></p>

@@ -86,9 +86,9 @@ public class CategoryServiceImpl implements CategoryService {
         validator.check(categoryVo);
         Category before = categoryMapper.selectById(categoryVo.getId());
         Preconditions.checkNotNull(before, "待更新的分类不存在");
-        // 角色去重
+        // 分类去重
         if (checkCategoryNameExist(categoryVo.getName(), categoryVo.getId())){
-            throw new BusinessException("角色已经存在！");
+            throw new BusinessException("分类已经存在！");
         }
         // 建造者模式
         Category entity = Category.builder().id(categoryVo.getId()).name(categoryVo.getName())

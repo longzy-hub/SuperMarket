@@ -6,6 +6,7 @@ import com.lzy.page.PageQuery;
 import com.lzy.pojo.SysPerm;
 import com.lzy.pojo.SysRole;
 import com.lzy.pojo.SysUser;
+import com.lzy.viewobject.PersonalVo;
 import com.lzy.viewobject.SearchUserVo;
 import com.lzy.viewobject.SysUserVo;
 import com.lzy.viewobject.UserVo;
@@ -25,4 +26,6 @@ public interface SysUserService {
     SysRole findRolesByUserName(String primaryPrincipal);
 
     List<SysPerm> findPermsByRoleId(Integer id);
+
+    void updatePersonal(PersonalVo personalVo);
 }

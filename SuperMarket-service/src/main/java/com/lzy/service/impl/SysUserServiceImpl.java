@@ -16,6 +16,7 @@ import com.lzy.pojo.SysUser;
 import com.lzy.service.SysUserService;
 import com.lzy.utils.SaltUtils;
 import com.lzy.validator.ValidatorApi;
+import com.lzy.viewobject.PersonalVo;
 import com.lzy.viewobject.SearchUserVo;
 import com.lzy.viewobject.SysUserVo;
 import com.lzy.viewobject.UserVo;
@@ -161,6 +162,32 @@ public class SysUserServiceImpl implements SysUserService {
         queryWrapper.eq("role_id", id);
         List<SysPerm> perms = sysPermMapper.selectList(queryWrapper);
         return perms;
+    }
+
+    @Override
+    public void updatePersonal(PersonalVo personalVo) {
+        validator.check(personalVo);
+        if (checkMailExist(personalVo.getMail(),personalVo.getId())){
+            throw new BusinessException("邮箱已经存在！");
+        }
+        if (checkTelephoneExist(personalVo.getTelephone(), personalVo.getId())){
+            throw new BusinessException("手机号已经存在！");
+        }
+
+        SysUser entity = SysUser.builder().id(personalVo.getId()).username(personalVo.getUsername())
+                .telephone(personalVo.getTelephone()).mail(personalVo.getMail())
+                .updateTime(new Date()).build();
+
+        if (StringUtils.isNotBlank(personalVo.getPassword())){
+            // 生成随机盐
+            String salt = SaltUtils.getSalt(8);
+            // 密码加密 md5 + salt + hash散列
+            Md5Hash md5Hash = new Md5Hash(personalVo.getPassword(), salt, 1024);
+            entity.setPassword(md5Hash.toHex());
+            entity.setSalt(salt);
+        }
+        sysUserMapper.updateById(entity);
+
     }
 
     // 手机号去重

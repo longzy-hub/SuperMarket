@@ -20,7 +20,8 @@ $(function () {
             // alert(number);
             $('#login').attr("action", "/sys/login/login.json");
         }else {
-            $('#codeMessage').html("验证码错误！");
+            // $('#codeMessage').html("验证码错误！");
+            alert("验证码错误，请重新登录！");
         }
     });
 });

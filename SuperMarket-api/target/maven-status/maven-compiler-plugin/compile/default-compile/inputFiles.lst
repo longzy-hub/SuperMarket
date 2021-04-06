@@ -3,11 +3,17 @@ E:\github\SuperMarket\SuperMarket-api\src\main\java\com\lzy\config\MybatisPlusCo
 E:\github\SuperMarket\SuperMarket-api\src\main\java\com\lzy\shiro\realm\CustomerRealm.java
 E:\github\SuperMarket\SuperMarket-api\src\main\java\com\lzy\aspect\ServiceLogAspect.java
 E:\github\SuperMarket\SuperMarket-api\src\main\java\com\lzy\config\Swagger2.java
+E:\github\SuperMarket\SuperMarket-api\src\main\java\com\lzy\controller\MailController.java
+E:\github\SuperMarket\SuperMarket-api\src\main\java\com\lzy\controller\PersonalController.java
 E:\github\SuperMarket\SuperMarket-api\src\main\java\com\lzy\controller\TestController.java
 E:\github\SuperMarket\SuperMarket-api\src\main\java\com\lzy\shiro\config\ShiroConfig.java
 E:\github\SuperMarket\SuperMarket-api\src\main\java\com\lzy\controller\SysUserController.java
 E:\github\SuperMarket\SuperMarket-api\src\main\java\com\lzy\controller\ProductController.java
+E:\github\SuperMarket\SuperMarket-api\src\main\java\com\lzy\controller\OrderController.java
 E:\github\SuperMarket\SuperMarket-api\src\main\java\com\lzy\controller\SysRoleController.java
+E:\github\SuperMarket\SuperMarket-api\src\main\java\com\lzy\controller\BackController.java
 E:\github\SuperMarket\SuperMarket-api\src\main\java\com\lzy\shiro\salt\MyByteSource.java
 E:\github\SuperMarket\SuperMarket-api\src\main\java\com\lzy\controller\SysAdminController.java
+E:\github\SuperMarket\SuperMarket-api\src\main\java\com\lzy\controller\SysPermController.java
+E:\github\SuperMarket\SuperMarket-api\src\main\java\com\lzy\controller\CartController.java
 E:\github\SuperMarket\SuperMarket-api\src\main\java\com\lzy\controller\SysLoginController.java

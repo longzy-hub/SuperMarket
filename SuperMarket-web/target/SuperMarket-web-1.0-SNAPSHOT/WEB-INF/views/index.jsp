@@ -30,7 +30,7 @@
                                 <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
                                 <i class="ace-icon fa fa-search nav-search-icon"></i>
                             </span>
-                    <a href="#">
+                    <a href="/shoppingcart/cart.page">
                         <span class="menu-icon fa fa-shopping-cart" style="margin-left: 30px; color: coral; font-size: 30px"></span>
                     </a>
                 </form>

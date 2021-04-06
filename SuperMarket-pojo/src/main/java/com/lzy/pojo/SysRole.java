@@ -13,7 +13,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @TableName(value = "sys_role")
-public class SysRole implements Serializable {
+public class SysRole {
 
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;

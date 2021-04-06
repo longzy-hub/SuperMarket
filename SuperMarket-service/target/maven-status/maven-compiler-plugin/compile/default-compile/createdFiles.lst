@@ -1,8 +1,11 @@
+com\lzy\service\impl\UserServiceImpl.class
 com\lzy\service\impl\CategoryServiceImpl.class
 com\lzy\service\ProductService.class
-com\lzy\service\SysRoleService.class
 com\lzy\service\CategoryService.class
 com\lzy\service\impl\ProductServiceImpl.class
-com\lzy\service\SysUserService.class
 com\lzy\service\impl\SysRoleServiceImpl.class
 com\lzy\service\impl\SysUserServiceImpl.class
+com\lzy\service\SysPermService.class
+com\lzy\service\SysRoleService.class
+com\lzy\service\SysUserService.class
+com\lzy\service\impl\SysPermServiceImpl.class

@@ -16,7 +16,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @TableName(value = "sys_user")
-public class SysUser implements Serializable {
+public class SysUser{
 
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;

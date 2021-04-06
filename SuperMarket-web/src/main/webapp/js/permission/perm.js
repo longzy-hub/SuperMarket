@@ -123,7 +123,8 @@ $(function () {
                 pageSize,
                 result.data.total > 0 ? result.data.records .length : 0,
                 "permPage",
-                renderPermListAndPage);
+                renderPermListAndPage,
+                true);
         }else {
             showMessage("获取权限列表", result.msg, false);
         }

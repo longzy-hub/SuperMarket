@@ -31,7 +31,7 @@
         <!--生成对应表及类名
         example是sql生成语法，设置为false之后，只能手工sql
         -->
-        <table tableName="productimg" domainObjectName="ProductImg" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+        <table tableName="orderitem" domainObjectName="OrderItem" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
             <!-- 使用自增长键 -->
             <property name="my.isgen.usekeys" value="true"/>
             <generatedKey column="id" sqlStatement="JDBC"/>       

@@ -16,7 +16,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @TableName(value = "sys_perm")
-public class SysPerm implements Serializable {
+public class SysPerm  {
 
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;

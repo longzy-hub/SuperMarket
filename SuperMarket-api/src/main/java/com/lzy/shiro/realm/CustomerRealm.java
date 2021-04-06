@@ -4,6 +4,7 @@ package com.lzy.shiro.realm;
 import com.lzy.pojo.SysPerm;
 import com.lzy.pojo.SysRole;
 import com.lzy.pojo.SysUser;
+import com.lzy.service.PersonalService;
 import com.lzy.service.SysUserService;
 import com.lzy.shiro.salt.MyByteSource;
 import org.apache.shiro.authc.AuthenticationException;
@@ -28,6 +29,9 @@ public class CustomerRealm extends AuthorizingRealm {
 
     @Resource
     private SysUserService sysUserService;
+
+    @Resource
+    private PersonalService personalService;
 
     // 授权方法
     @Override
@@ -58,6 +62,7 @@ public class CustomerRealm extends AuthorizingRealm {
         String principal = (String) token.getPrincipal();
         SysUser user = sysUserService.findByUserName(principal);
         if(!ObjectUtils.isEmpty(user)){
+            personalService.insertPersonal(user.getId());
             return new SimpleAuthenticationInfo(principal,user.getPassword(),
                     new MyByteSource(user.getSalt()),
                     this.getName());

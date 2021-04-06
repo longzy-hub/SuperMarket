@@ -133,7 +133,8 @@ $(function () {
                 pageSize,
                 result.data.total > 0 ? result.data.records .length : 0,
                 "rolePage",
-                renderRoleListAndPage);
+                renderRoleListAndPage,
+                true);
         }else {
             showMessage("获取角色列表", result.msg, false);
         }

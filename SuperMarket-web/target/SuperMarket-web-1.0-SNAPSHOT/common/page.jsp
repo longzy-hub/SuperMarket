@@ -41,8 +41,7 @@
 	Mustache.parse(paginateTemplate);
 	//渲染分页的内容
 	//url total pageNo pageSize currentSize idElement:将paginatetemplate加载到哪一个页面版块 预留一个回调函数
-	function renderPage(url, total, pageNo, pageSize, currentSize, idElement,
-			callback) {
+	function renderPage(url, total, pageNo, pageSize, currentSize, idElement,callback,isCreate) {
 		//得到最大的页码,使用向上取整的函数
 		var maxPageNo = Math.ceil(total / pageSize);
 		//url: /order/page.json?username=apple&age=100
@@ -80,32 +79,36 @@
 		$("#" + idElement).html(Mustache.render(paginateTemplate, view));
 		//每一个页码按钮拥有一个点击事件
 		$(".page-action").click(function(e) {
-					//阻止默认事件，冒泡
-					e.preventDefault();
-					//获取当前的skipno
-					var skipNo = $(".skiptxt").val();
-					if (skipNo != null && skipNo > 0) {
-						pageNo = parseInt(skipNo>=maxPageNo?maxPageNo:skipNo);
-						$(".skip").attr("data-target",pageNo).attr(//
-								"data-url",//
-								url + paramStartChar + "pageNo=" + pageNo
-										+ "&pageSize=" + pageSize);
-					}
-					var targetUrl = $(this).attr("data-url");
-					//给每一个按钮添加指定的值
-					$("#" + idElement + " .pageNo").val(
-							$(this).attr("data-target"));
-					//填充每一个按钮上的url
-					//让回调函数执行这个url
-					if (targetUrl != '') {
-						$.ajax({
-			                url : targetUrl,
-			                success: function (result) {
-			                	callback(result,url)
-			                }
-			            });
-					}
-                    //callback(targetUrl);//交由其他地方的ajax请求来传输页码,url以及数据
-				})
+            //阻止默认事件，冒泡
+            e.preventDefault();
+            //获取当前的skipno
+            var skipNo = $(".skiptxt").val();
+            if (skipNo != null && skipNo > 0) {
+                pageNo = parseInt(skipNo>=maxPageNo?maxPageNo:skipNo);
+                $(".skip").attr("data-target",pageNo).attr(//
+                    "data-url",//
+                    url + paramStartChar + "pageNo=" + pageNo
+                    + "&pageSize=" + pageSize);
+            }
+            var targetUrl = $(this).attr("data-url");
+            //给每一个按钮添加指定的值
+            $("#" + idElement + " .pageNo").val(
+                $(this).attr("data-target"));
+            //填充每一个按钮上的url
+            //让回调函数执行这个url
+            if (targetUrl != '') {
+                if (isCreate){
+                    $.ajax({
+                        url : targetUrl,
+                        success: function (result) {
+                            callback(result,url);
+                        }
+                    });
+                }else {
+                    callback(targetUrl);
+                }
+                //callback(targetUrl);//交由其他地方的ajax请求来传输页码,url以及数据
+            }
+        })
 	}
 </script>

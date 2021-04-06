@@ -36,7 +36,7 @@
                          <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
                          <i class="ace-icon fa fa-search nav-search-icon"></i>
                     </span>
-                    <a href="#">
+                    <a href="/shoppingcart/cart.page">
                         <span class="menu-icon fa fa-shopping-cart" style="margin-left: 30px; color: coral; font-size: 30px"></span>
                     </a>
                 </form>
@@ -54,7 +54,7 @@
 
             <div class="row">
                 <div class="col-xs-12">
-                    <div class="col-sm-2">
+                    <div class="col-xs-2">
                         <div class="table-header">
                             商品分类列表&nbsp;&nbsp; <a class="green" href="#"></a>
                         </div>
@@ -71,10 +71,7 @@
                                     <option value="100">100</option>
                                 </select>&nbsp;&nbsp;条记录</li>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <li><input type="search" id="keyword" name="keyword" placeholder="关键字"/></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <li class="hidden">状态&nbsp;&nbsp;<select id="search_status">
-                                    <option value="1">有效</option>
-                                    <option value="0">无效</option>
-                                </select></li>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <li class="hidden"><input id="search_status" value="1"/></li>
                                 <li><button class="btn btn-info fa fa-check research">查询</button></li>
                             </ul><!--/.ul-->
                             <!--商品展示-->

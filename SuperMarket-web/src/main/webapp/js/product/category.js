@@ -94,7 +94,7 @@ $(function () {
         });
     }
 
-    // 渲染mustache模板页面，指定页面下的订单列表
+    // 渲染mustache模板页面，指定页面下的分类列表
     function renderCategoryListAndPage(result, url) {
         // result是从数据库返回过来的数据集合
         if (result.status == 'success') {
@@ -161,7 +161,8 @@ $(function () {
                 pageSize,
                 result.data.total > 0 ? result.data.records .length : 0,
                 "categoryPage",
-                renderCategoryListAndPage);
+                renderCategoryListAndPage,
+                true);
         }else {
             showMessage("获取分类列表", result.msg, false);
         }

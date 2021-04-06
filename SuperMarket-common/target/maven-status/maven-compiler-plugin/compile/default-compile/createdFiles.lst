@@ -1,10 +1,10 @@
 com\lzy\error\CommonError.class
 com\lzy\error\BusinessException.class
-com\lzy\error\EmBusinessError.class
 com\lzy\utils\SaltUtils.class
-com\lzy\utils\ImageUtils.class
 com\lzy\validator\impl\ValidatorImpl.class
-com\lzy\validator\ValidationResult.class
 com\lzy\response\CommonReturnType.class
 com\lzy\validator\ValidatorApi.class
+com\lzy\error\EmBusinessError.class
+com\lzy\utils\ImageUtils.class
+com\lzy\validator\ValidationResult.class
 com\lzy\error\handler\GlobalExceptionHandler.class

@@ -170,7 +170,8 @@ $(function () {
                 pageSize,
                 result.data.total > 0 ? result.data.records.length : 0,
                 "userPage",
-                renderUserListAndPage);
+                renderUserListAndPage,
+                true);
         }else {
             showMessage("获取角色下的用户列表",result.msg, false);
         }

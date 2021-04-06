@@ -155,7 +155,8 @@ $(function () {
                 pageSize,
                 result.data.total > 0 ? result.data.records.length : 0,
                 "showProductPage",
-                renderProductListAndPage);
+                renderProductListAndPage,
+                true);
         }else {
             showMessage("获取分类下的商品列表",result.msg, false);
         }
@@ -190,8 +191,32 @@ $(function () {
                 }
 
             });
+            bindAddCart(productId);
+        });
+    }
 
+    function bindAddCart(productId) {
 
+        $("#cart-add").click(function () {
+            var number = $("#number").val();
+            $.ajax({
+                url:"/shoppingcart/addCart.json",
+                type: "POST",
+                data: {
+                    number: number,
+                    productId:productId
+                },
+                success: function (result) {
+                    if (result.status == "success"){
+                        $('#dialog-details-form').dialog("close");
+                        showMessage("加入购物车",result.msg,true);
+                    }else {
+                        $('#dialog-details-form').dialog("close");
+                        showMessage("加入购物车",result.msg,false);
+                    }
+
+                }
+            });
         });
     }
 
